@@ -1,4 +1,80 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #dadada;
   font-size: 10px;
+  font-family: serif;
+  /*width: 375px;*/
+  width: auto;
+  margin: 0 auto;
+}
+
+
+h1 {
+  font-size: 2em;
+  padding: 4%;
+  text-align: center;
+}
+
+div h1 {
+  text-align: left;
+}
+
+div {
+  height: 200px;
+  width: 100%;
+  margin-bottom: 3%;
+  display: inline-block;
+  background: no-repeat right center;
+  background-size: cover;
+  float: left;
+}
+
+/* change to 2 column */
+ @media screen and (min-width: 575px){
+   div {
+    margin: 1%;
+    width: 48%;
+  }
+}
+
+/* change to 4 column */
+@media screen and (min-width: 991px){
+  div {
+   margin: 1%;
+   width: 23%;
+ }
+}
+
+/* adds side margin on larger screens */
+@media screen and (min-width: 575px){
+  .container {
+   margin: 0 15%;
+ }
+}
+
+/* to style heading */
+.emphasis {
+  font-family: sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 0.7em;
+}
+
+.baku {
+  background-image: url('/images/baku.jpg');
+}
+
+.london {
+  background-image: url('/images/london.png');
+}
+
+.madrid {
+  background-image: url('/images/madrid.jpg');
+}
+
+.rome {
+  background-image: url('/images/rome.jpg');
 }
